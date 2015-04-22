@@ -38,7 +38,7 @@ the
         <tbody>
           <tr id="Duration">
             <th colspan="1" rowspan="1">End date</th>
-            <td colspan="1" rowspan="1">31 May 2017</td>
+            <td colspan="1" rowspan="1">31 May 2016</td>
           </tr>
           <tr>
             <th colspan="1" rowspan="1">Confidentiality</th>
@@ -46,7 +46,7 @@ the
           </tr>
           <tr>
             <th colspan="1" rowspan="1">Initial Chairs</th>
-            <td colspan="1" rowspan="1">@@</td>
+            <td colspan="1" rowspan="1">Ilya Grigorik, Google<br>Todd Reifsteck, Microsoft</td>
           </tr>
           <tr>
             <th colspan="1" rowspan="1">Initial Team Contacts<br>
@@ -81,8 +81,7 @@ the
         <h3>Success Criteria</h3>
         <p>In order to advance to Proposed Recommendation, each specification is
           expected to have two independent implementations of each of feature
-          defined in
-          the specification. </p>
+          defined in the specification. </p>
       </div>
       <div>
         <h3>Out of Scope</h3>
@@ -102,6 +101,10 @@ the
               Timeline</a></dt>
           <dd>This specification defines an unified interface to store and
             retrieve performance metric data.</dd>
+          <dt>Performance Observer</dt>
+          <dd>This specification defines an interface to register a PerformanceObserver
+            callback to receive PerformanceEntry events. This is useful to allow 
+            addition of PerformanceEntry sources to the platform.</dd>  
           <dt><a href="http://w3c-test.org/webperf/specs/NavigationTiming2/">Navigation
               Timing 2</a><br>
           </dt>
@@ -155,37 +158,26 @@ the
           <dd>An interoperable and efficient means for web page authors to write
             script-based animations where the user agent is in control of
             limiting the update rate of the animation.</dd>
-          <dt>Resource Priorities</dt>
+          <dt><a href="https://w3c.github.io/resource-hints/">Resource Hints</a></dt>
           <dd>An interoperable means for site developers to give the user agent
-            hints on the download priority of resources.</dd>
-          <dt>Beacon</dt>
+            hints on prioritization of download to prerender of resources.</dd>
+          <dt><a href="http://w3c.github.io/beacon/">Beacon</a></dt>
           <dd>An interoperable API for site developers to asynchronously
             transfer data from the user agent to a web server, with a guarantee
             from the user agent that the data will be eventually sent.</dd>
-          <dt>Diagnostics</dt>
-          <dd>An interoperable means for site developers to get web browser
-            diagnostics information on their web applications, like error
-            logging and memory leaks type information.</dd>
-          <dt>Pre-render (link rel=prerender)</dt>
+          <dt><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></dt>
+          <dd>An interoperable means for site developers to register to have 
+            network errors recorded by the user agent and sent to a uri.</dd>
+          <dt><a href="https://w3c.github.io/preload/">Preload</a></dt>
           <dd>An interoperable means for site developers to instruct the web
-            browser to preload a web page while keeping it hidden to improve
-            user perceived performance.</dd>
-          <dt>Display Performance</dt>
-          <dd>An interoperable means for site developers to get frame rate and
+            browser to preload a resource using link tag before script is executed.</dd>
+          <dt><a href="http://w3c.github.io/frame-timing/">Frame Timing</a></dt>
+          <dd>Previously named Display Performance, an interoperable means for site developers to get frame rate and
             throughput of the display type of information.</dd>
-          <dt>Async scroll</dt>
-          <dd>An interoperable means for site operators to smoothly scroll the
-            viewport in the same way users can through the UI and monitor the
-            scrolling performance. This will enable operators to properly
-            benchmark and test their site's scrolling performance.</dd>
-          <dd>This specification defines an archival format for HTTP
-            transactions that can be used by a web browser to export detailed
-            performance data about web pages it loads.</dd>
-        </dl>
+          </dl>
         <p>
-	  In addition, the Working Group will review the
-          specifications listed above to take into account Web Workers
-          support.
+          In addition, the Working Group will review the specifications listed
+          above to take into account Web Worker and Service Worker support.
         </p>
 	<p>
 	  The specifications will include privacy and security considerations.
