@@ -1,406 +1,302 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <title>Web Performance Working Group</title>
-    <link media="screen" type="text/css" href="https://www.w3.org/2005/10/w3cdoc.css"
-      rel="stylesheet">
-    <link href="https://www.w3.org/Guide/pubrules-style.css" type="text/css" rel="stylesheet">
-    <link href="https://www.w3.org/2006/02/charter-style.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="template">
-      <ul style="font-size: small" id="navbar">
-        <li><a href="#scope">Scope</a></li>
-        <li><a href="#deliverables">Deliverables</a></li>
-        <li><a href="#coordination">Dependencies and Liaisons</a></li>
-        <li><a href="#participation">Participation</a></li>
-        <li><a href="#communication">Communication</a></li>
-        <li><a href="#decisions">Decision Policy</a></li>
-        <li><a href="#patentpolicy">Patent Policy</a></li>
-        <li><a href="#about">About this Charter</a></li>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Performance Working Group</title>
+  <link media="screen" type="text/css" href="https://www.w3.org/2005/10/w3cdoc.css" rel="stylesheet">
+  <link href="https://www.w3.org/Guide/pubrules-style.css" type="text/css" rel="stylesheet">
+  <link href="https://www.w3.org/2006/02/charter-style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="template">
+    <ul style="font-size: small" id="navbar">
+      <li><a href="#scope">Scope</a></li>
+      <li><a href="#deliverables">Deliverables</a></li>
+      <li><a href="#coordination">Dependencies and Liaisons</a></li>
+      <li><a href="#participation">Participation</a></li>
+      <li><a href="#communication">Communication</a></li>
+      <li><a href="#decisions">Decision Policy</a></li>
+      <li><a href="#patentpolicy">Patent Policy</a></li>
+      <li><a href="#about">About this Charter</a></li>
+    </ul>
+
+    <p>
+      <a shape="rect" href="http://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/Icons/w3c_home" alt="W3C"></a>
+      <a shape="rect" href="http://www.w3.org/Interaction/" class="domainlogo"><img alt="Interaction Domain" src="http://www.w3.org/Icons/interaction"></a>
+    </p>
+
+    <h1 id="title">Web Performance Working Group Charter</h1>
+    <p class="mission">The <strong>mission</strong> of the <a href="/2010/webperf">Web Performance Working Group</a>, part of the <a href="http://www.w3.org/2006/rwc/Activity.html">Rich Web Client Activity</a>, is to provide methods to enhance aspects of application performance of user agent features and APIs.</p>
+
+    <div class="noprint">
+      <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/45211/join">Join the Web Performance Working Group</a>.</p>
+    </div>
+
+    <table class="summary-table">
+      <tbody>
+        <tr id="Duration">
+          <th colspan="1" rowspan="1">End date</th>
+          <td colspan="1" rowspan="1">31 May 2016</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Confidentiality</th>
+          <td colspan="1" rowspan="1">Proceedings are <a shape="rect" href="http://www.w3.org/2005/10/Process-20051014/comm.html#confidentiality-levels">public</a></td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Initial Chairs</th>
+          <td colspan="1" rowspan="1">Ilya Grigorik, Google
+            <br>Todd Reifsteck, Microsoft</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Initial Team Contacts
+            <br> (FTE %: 5)</th>
+          <td colspan="1" rowspan="1">Philippe Le Hégaret, Xiaoqian Wu</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Usual Meeting Schedule</th>
+          <td colspan="1" rowspan="1">Teleconferences: Weekly
+            <br> Face-to-face: we will meet during the W3C's annual Technical Plenary week (if space available); an additional face-to-face meeting may be scheduled by consent of the participants
+            <br> IRC channel: #webperf</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="scope">
+      <h2 id="scope">Scope</h2>
+      <p>As Web browsers and their underlying engines include richer capabilities and become more powerful, web developers are building more sophisticated applications where application performance is increasingly important. Developers need the ability to assess and understand the performance characteristics of their applications, and they need the ability to write more efficient applications, using well-defined interoperable methods.</p>
+      <p>The Web Performance Working Group's deliverables include user agent features and APIs to measure and improve aspects of application performance. These deliverables will apply to desktop and mobile browsers and other non-browser environments where appropriate and will be consistent with Web technologies designed in other working groups including HTML, CSS, WebApps, DAP and SVG.</p>
+      <h3>Success Criteria</h3>
+      <p>In order to advance to Proposed Recommendation, each specification is expected to have two independent implementations of each of feature defined in the specification.
+      </p>
+    </div>
+
+    <div>
+      <h3>Out of Scope</h3>
+      <p>The following items are not in scope:</p>
+      <ul>
+        <li>method to profile and instrument server side code;
+        </li>
+        <li>performance data analysis techniques or algorithms.
+        </li>
       </ul>
-      <p><a shape="rect" href="http://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/Icons/w3c_home"
-            alt="W3C"></a> <a shape="rect" href="http://www.w3.org/Interaction/"
-          class="domainlogo"><img alt="Interaction Domain" src="http://www.w3.org/Icons/interaction"></a></p>
-      <h1 id="title">Web Performance Working Group Charter</h1>
-      <p class="mission">The <strong>mission</strong> of
-        the <a href="/2010/webperf">Web Performance Working Group</a>, part of
-        the <a href="http://www.w3.org/2006/rwc/Activity.html">Rich Web Client
-          Activity</a>, is to provide methods to enhance aspects of application
-        performance of user agent features and APIs.</p>
-      <div class="noprint">
-        <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/45211/join">Join
-the
-            Web Performance Working Group</a>.</p>
+    </div>
+
+    <div>
+      <h2 id="deliverables">Deliverables</h2>
+      <p>The working group will deliver the following:</p>
+      <dl>
+        <dt><a href="http://www.w3.org/TR/performance-timeline/">Performance Timeline</a></dt>
+        <dd>This specification defines an unified interface to store and retrieve performance metric data.</dd>
+
+        <dt>Performance Observer</dt>
+        <dd>This specification defines an interface to register a PerformanceObserver callback to receive PerformanceEntry events. This is useful to allow addition of PerformanceEntry sources to the platform.</dd>
+
+        <dt><a href="http://w3c-test.org/webperf/specs/NavigationTiming2/">Navigation Timing 2</a></dt>
+        <dd>An interoperable means for site developers to collect real-world performance information from the user agent while loading the root document of a webpage. The user agent captures the end to end latency associated with loading a webpage from a web server. This includes the time associated with fetching the document from the network to the time associated to load the document within the user agent. The Group produced a first version of <a href="http://www.w3.org/TR/2012/REC-navigation-timing-20121217/">Navigation Timing</a>.</dd>
+
+        <dt><a href="http://www.w3.org/TR/resource-timing/">Resource Timing 1</a> &amp; 2</dt>
+        <dd>An interoperable means for site developers to collect real-world performance information from the user agent while loading resources as specified from the root document of a webpage. The user agent captures the end to end latency associated with loading resources from a web server. This includes the time associated with fetching the resource from the network and the time associated to load the resource within the user agent. This might include:
+          <ul>
+            <li>timing associated with the network;</li>
+            <li>timings associated with loading the resource in the document;</li>
+            <li>a resource may be one of the following elements: iframe, img, script, object, embed and link.</li>
+          </ul>
+        </dd>
+
+        <dt><a href="http://www.w3.org/TR/user-timing/">User Timings</a></dt>
+        <dd>An interoperable means for site developers to capture timing information with a developer supplied name. The user agent captures the time stamp at the point and time specified in the code executing in the user agent.</dd>
+
+        <dt><a href="http://www.w3.org/TR/page-visibility/">Page Visibility</a></dt>
+        <dd>An interoperable means for site developers to programmatically determine the current visibility of a document and be notified of visibility changes.</dd>
+
+        <dt><a href="http://w3c-test.org/webperf/specs/setImmediate/">Efficient Script Yielding</a></dt>
+        <dd>An interoperable means for site developers to efficiently yield and receive control flow.</dd>
+
+        <dt><a href="http://www.w3.org/TR/animation-timing/">Timing control for script-based animations</a></dt>
+        <dd>An interoperable and efficient means for web page authors to write script-based animations where the user agent is in control of limiting the update rate of the animation.</dd>
+
+        <dt><a href="https://w3c.github.io/resource-hints/">Resource Hints</a></dt>
+        <dd>An interoperable means for site developers to give the user agent hints on prioritization of download to prerender of resources.</dd>
+
+        <dt><a href="http://w3c.github.io/beacon/">Beacon</a></dt>
+        <dd>An interoperable API for site developers to asynchronously transfer data from the user agent to a web server, with a guarantee from the user agent that the data will be eventually sent.</dd>
+
+        <dt><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></dt>
+        <dd>An interoperable means for site developers to register to have network errors recorded by the user agent and sent to a uri.</dd>
+
+        <dt><a href="https://w3c.github.io/preload/">Preload</a></dt>
+        <dd>An interoperable means for site developers to instruct the web browser to preload a resource using link tag before script is executed.</dd>
+
+        <dt><a href="http://w3c.github.io/frame-timing/">Frame Timing</a></dt>
+        <dd>Previously named Display Performance, an interoperable means for site developers to get frame rate and throughput of the display type of information.</dd>
+      </dl>
+
+      <p>In addition, the Working Group will review the specifications listed above to take into account Web Worker and Service Worker support.</p>
+
+      <p>The specifications will include privacy and security considerations.</p>
+
+      <div id="ig-other-deliverables">
+        <h3>Other Deliverables</h3>
+        <p>Other non-normative documents may be created such as:</p>
+        <ul>
+          <li>Test suites for each specification;</li>
+          <li>Primer or Best Practice documents to support web developers when designing applications with performance in mind;</li>
+          <li>Best practice document explaining how data is commonly gathered between the client and the server.</li>
+        </ul>
       </div>
-      <table class="summary-table">
+
+      <h3>Milestones</h3>
+      <table width="80%" class="roadmap">
+        <caption>Milestones</caption>
+        <tfoot>
+          <tr>
+            <td rowspan="1" colspan="6">Note: The group will document significant changes from this initial schedule on the <a href="http://www.w3.org/wiki/Web_Performance/Publications">group
+                  publication dashboard</a>.</td>
+          </tr>
+        </tfoot>
         <tbody>
-          <tr id="Duration">
-            <th colspan="1" rowspan="1">End date</th>
-            <td colspan="1" rowspan="1">31 May 2016</td>
+          <tr>
+            <th>Specification</th>
+            <th>
+              <acronym title="First Working Draft">FPWD</acronym>
+            </th>
+            <th>
+              <acronym title="Last Call Working Draft">LC</acronym>
+            </th>
+            <th>
+              <acronym title="Candidate Recommendation">CR</acronym>
+            </th>
+            <th>
+              <acronym title="Proposed Recommendation">PR</acronym>
+            </th>
+            <th>
+              <acronym title="Recommendation">Rec</acronym>
+            </th>
           </tr>
           <tr>
-            <th colspan="1" rowspan="1">Confidentiality</th>
-            <td colspan="1" rowspan="1">Proceedings are <a shape="rect" href="http://www.w3.org/2005/10/Process-20051014/comm.html#confidentiality-levels">public</a></td>
-          </tr>
-          <tr>
-            <th colspan="1" rowspan="1">Initial Chairs</th>
-            <td colspan="1" rowspan="1">Ilya Grigorik, Google<br>Todd Reifsteck, Microsoft</td>
-          </tr>
-          <tr>
-            <th colspan="1" rowspan="1">Initial Team Contacts<br>
-              (FTE %: 5)</th>
-            <td colspan="1" rowspan="1">Philippe Le Hégaret, Xiaoqian Wu</td>
-          </tr>
-          <tr>
-            <th colspan="1" rowspan="1">Usual Meeting Schedule</th>
-            <td colspan="1" rowspan="1">Teleconferences: Weekly <br>
-              Face-to-face: we will meet during the W3C's annual Technical
-              Plenary week (if space available); an additional face-to-face
-              meeting may be scheduled by consent of the participants<br>
-              IRC channel: #webperf</td>
+            <th>@@
+            </th>
+            <td class="WD1">@@
+            </td>
+            <td class="CR">@@
+            </td>
+            <td class="PR">@@
+            </td>
+            <td class="REC">@@
+            </td>
           </tr>
         </tbody>
       </table>
-      <div class="scope">
-        <h2 id="scope">Scope</h2>
-        <p>As Web browsers and their underlying engines include richer
-          capabilities and become more powerful, web developers are building
-          more sophisticated applications where application performance is
-          increasingly important. Developers need the ability to assess and
-          understand the performance characteristics of their applications, and
-          they need the ability to write more efficient applications, using
-          well-defined interoperable methods.</p>
-        <p>The Web Performance Working Group's deliverables include user agent
-          features and APIs to measure and improve aspects of application
-          performance. These deliverables will apply to desktop and mobile
-          browsers and other non-browser environments where appropriate and will
-          be consistent with Web technologies designed in other working groups
-          including HTML, CSS, WebApps, DAP and SVG.</p>
-        <h3>Success Criteria</h3>
-        <p>In order to advance to Proposed Recommendation, each specification is
-          expected to have two independent implementations of each of feature
-          defined in the specification. </p>
-      </div>
-      <div>
-        <h3>Out of Scope</h3>
-        <p>The following items are not in scope:</p>
-        <ul>
-          <li>method to profile and instrument server side
-            code;</li>
-          <li>performance data analysis techniques or
-            algorithms.</li>
-        </ul>
-      </div>
-      <div>
-        <h2 id="deliverables">Deliverables</h2>
-        <p>The working group will deliver the following:</p>
-        <dl>
-          <dt><a href="http://www.w3.org/TR/performance-timeline/">Performance
-              Timeline</a></dt>
-          <dd>This specification defines an unified interface to store and
-            retrieve performance metric data.</dd>
-          <dt>Performance Observer</dt>
-          <dd>This specification defines an interface to register a PerformanceObserver
-            callback to receive PerformanceEntry events. This is useful to allow 
-            addition of PerformanceEntry sources to the platform.</dd>  
-          <dt><a href="http://w3c-test.org/webperf/specs/NavigationTiming2/">Navigation
-              Timing 2</a><br>
-          </dt>
-          <dd>An interoperable means for site developers to
-            collect real-world performance information from the user agent while
-            loading the root document of a webpage. The user agent captures the
-            end
-            to end latency associated with loading a webpage from a web server.
-            This
-            includes the time associated with fetching the document from the
-            network
-            to the time associated to load the document within the user agent.
-            The Group produced a first version of <a href="http://www.w3.org/TR/2012/REC-navigation-timing-20121217/">Navigation
-              Timing</a>.</dd>
-          <dt><a href="http://www.w3.org/TR/resource-timing/">Resource Timing 1</a>
-            &amp; 2<br>
-          </dt>
-          <dd>An interoperable means for site developers to
-            collect real-world performance information from the user agent while
-            loading resources as specified from the root document of a webpage.
-            The
-            user agent captures the end to end latency associated with loading
-            resources from a web server. This includes the time associated with
-            fetching the resource from the network and the time associated to
-            load
-            the resource within the user agent. This might include:
-            <ul>
-              <li>timing associated with the network;</li>
-              <li>timings associated with loading the resource in the document;</li>
-              <li>a resource may be one of the following elements: iframe, img,
-                script,
-                object, embed and link.</li>
-            </ul>
-          </dd>
-          <dt><a href="http://www.w3.org/TR/user-timing/">User Timings</a></dt>
-          <dd>An interoperable means for site developers to capture
-            timing information with a developer supplied name. The user agent
-            captures the time stamp at the point and time specified in the code
-            executing in the user agent.</dd>
-          <dt><a href="http://www.w3.org/TR/page-visibility/">Page Visibility</a></dt>
-          <dd>An interoperable means for site developers to programmatically
-            determine the current visibility of a document and be notified of
-            visibility changes.</dd>
-          <dt><a href="http://w3c-test.org/webperf/specs/setImmediate/">Efficient
-              Script Yielding</a></dt>
-          <dd>An interoperable means for site developers to efficiently yield
-            and receive control flow.</dd>
-          <dt><a href="http://www.w3.org/TR/animation-timing/">Timing control
-              for script-based animations</a><br>
-          </dt>
-          <dd>An interoperable and efficient means for web page authors to write
-            script-based animations where the user agent is in control of
-            limiting the update rate of the animation.</dd>
-          <dt><a href="https://w3c.github.io/resource-hints/">Resource Hints</a></dt>
-          <dd>An interoperable means for site developers to give the user agent
-            hints on prioritization of download to prerender of resources.</dd>
-          <dt><a href="http://w3c.github.io/beacon/">Beacon</a></dt>
-          <dd>An interoperable API for site developers to asynchronously
-            transfer data from the user agent to a web server, with a guarantee
-            from the user agent that the data will be eventually sent.</dd>
-          <dt><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></dt>
-          <dd>An interoperable means for site developers to register to have 
-            network errors recorded by the user agent and sent to a uri.</dd>
-          <dt><a href="https://w3c.github.io/preload/">Preload</a></dt>
-          <dd>An interoperable means for site developers to instruct the web
-            browser to preload a resource using link tag before script is executed.</dd>
-          <dt><a href="http://w3c.github.io/frame-timing/">Frame Timing</a></dt>
-          <dd>Previously named Display Performance, an interoperable means for site developers to get frame rate and
-            throughput of the display type of information.</dd>
-          </dl>
-        <p>
-          In addition, the Working Group will review the specifications listed
-          above to take into account Web Worker and Service Worker support.
-        </p>
-	<p>
-	  The specifications will include privacy and security considerations.
-	</p>
-        <dl>
-        </dl>
-        <div id="ig-other-deliverables">
-          <h3>Other Deliverables</h3>
-          <p>Other non-normative documents may be created such as:</p>
-          <ul>
-            <li>Test suites for each specification;</li>
-            <li>Primer or Best Practice documents to support web developers when
-              designing applications with performance in mind;</li>
-            <li>Best practice document explaining how data is commonly gathered
-              between the client and the server.</li>
-          </ul>
-        </div>
-        <h3>Milestones</h3>
-        <table width="80%" class="roadmap">
-          <caption>Milestones</caption>
-          <tfoot>
-            <tr>
-              <td rowspan="1" colspan="6">Note: The group will document
-                significant changes from this initial schedule on the <a href="http://www.w3.org/wiki/Web_Performance/Publications">group
-                  publication dashboard</a>.</td>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <th>Specification</th>
-              <th><acronym title="First Working Draft">FPWD</acronym></th>
-              <th><acronym title="Last Call Working Draft">LC</acronym></th>
-              <th><acronym title="Candidate Recommendation">CR</acronym></th>
-              <th><acronym title="Proposed Recommendation">PR</acronym></th>
-              <th><acronym title="Recommendation">Rec</acronym></th>
-            </tr>
-<tr>
-<th>@@
-</th><td class="WD1">@@
-</td><td class="CR">@@
-</td><td class="PR">@@
-</td><td class="REC">@@
-</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="dependencies">
-        <h2 id="coordination">Dependencies and Liaisons</h2>
-        <h3>W3C Groups</h3>
-        <dl>
-          <dt>Web Applications Working Group</dt>
-          <dd>
-	    This Working Group develops APIs for client-side
-            development and for markup vocabularies for describing and
-            controlling client-side application behavior. In
-            particular, it develops DOM Core. The WebTiming proposal
-            depends on the WebIDL specification.
-	  </dd>
-          <dt>Web Applications Security Working Group</dt>
-          <dd>
-	    This Working Group develops security and policy mechanisms
-            to improve the security of Web Applications, and enable
-            secure cross-site communication. Performance measures can
-            potentially leak important information related to security
-            and privacy. The work on the Diagnostics API should be
-            coordinated with
-            the <a href='http://www.w3.org/TR/CSP/'>Content Security
-            Policy 1.0</a> specification, which allows user agents
-            to <a href='http://www.w3.org/TR/CSP/#report-uri'>report
-            policy violation</a>.
-	  </dd>
-          <dt>HTML Working Group</dt>
-          <dd>This group will maintain and produce incremental revisions to the
-            HTML language. The Web Performance Working Group uses many concepts
-            from the HTML5 specification.
-          </dd>
-          <dt>CSS Working Group</dt>
-          <dd>The group develops and maintains CSS, which is relevant for
-            specifications such page visibility or Timing control for
-            script-based animations.
-          </dd>
-          <dt>Device APIs and Policy Working Group</dt>
-          <dd>This group create client-side APIs that enable the development of
-            Web Applications and Web Widgets that interact with devices
-            services.</dd>
-	  <dt>Privacy Interest Group</dt>
-	  <dd>
-	    This group monitors ongoing privacy issues that affect the
-	    Web, investigates potential areas for new privacy work,
-	    and provides guidelines and advice for addressing privacy
-	    in standards development.
-	  </dd>
-	  <dt>Protocols and Formats Working Group</dt>
-	  <dd>
-	    The mission of the PF Working Group is to ensure W3C
-	    specifications provide support for accessibility to people
-	    with disabilities.
-	  </dd>
-        </dl>
-        <div>
-          <h3>External Groups</h3>
-          <dl>
-            <dt><a href="http://www.ecma-international.org/memento/TC39.htm" id="tc39">ECMA
-                Technical Committee 39 (TC39)</a></dt>
-            <dd>This is the group responsible for ECMAScript standardization,
-              and related ECMAScript features like E4X. As the Web Performance
-              Working Group will be developing ECMAScript APIs, it should
-              collaborate with TC39.</dd>
-            <dt><a title="IETF Home Page" href="http://www.ietf.org/" id="ietf">Internet
-                Engineering Task Force</a></dt>
-            <dd>The IETF is responsible for defining robust and secure
-              protocols for Internet functionality, in particular
-              HTTP. The Working Group should coordinate
-              protocol-related work (e.g. profiles of hybi or HTTP)
-              with the appropriate IETF WGs.</dd>
-          </dl>
-        </div>
-      </div>
-      <div class="participation">
-        <h2 id="participation">Participation</h2>
-        <p>To be successful, the Web Performance Working Group is expected to
-          have 10 or more active participants for its duration. The Chairs and
-          specification Editors are expected to contribute one day per week
-          towards the Working Group. There is no minimum requirement for other
-          Participants. </p>
-        <p>The Web Performance Working Group will also allocate the necessary
-          resources for building Test Suites for each specification. </p>
-        <p>The group encourages questions and comments on its public mailing
-          lists, as described
-          in <a href="#communication">Communication</a>. </p>
-        <p>The group also welcomes non-Members to contribute technical
-          submissions for
-          consideration, with the agreement from each participant to
-          Royalty-Free
-          licensing of those submissions under the W3C Patent Policy. </p>
-      </div>
-      <div class="communication">
-        <h2 id="communication">Communication</h2>
-        <p>Most Web Performance Working Group Teleconferences will focus on
-          discussion of particular specifications, and will be conducted on an
-          as-needed basis.</p>
-        <p>This group primarily conducts its work on <a href='http://www.w3.org/2010/webperf/board/'>github issues</a> and the public mailing
-          list <a href="mailto:public-web-perf@w3.org" id="public-web-perf">public-web-perf@w3.org</a>
-          (<a href="http://lists.w3.org/Archives/Public/public-web-perf/">archive</a>).
-          The
-          public is invited to contribute to the github repositories and post messages to the list.</p>
-        <p>Information about the group (deliverables, participants,
-          teleconferences, etc.) is available from the Web Performance Working
-          Group home page.</p>
-        <p>The group will use a Member-confidential mailing list for
-          administrative purposes and, at the discretion of the Chairs and
-          members of the group, for member-only discussions in special cases
-          when a participant requests such a discussion. </p>
-        <p>Information about the group (for example, details about deliverables,
-          issues, actions, status, participants) will be available from the <a
-            href="http://www.w3.org/2010/webperf/">Web Performance Working Group
-            home
-            page.</a></p>
-      </div>
-      <div class="decisions">
-        <h2 id="decisions">Decision Policy</h2>
-        <p>As explained in the W3C Process Document
-          (<a href="http://www.w3.org/Consortium/Process/policies#Consensus">section
-            3.3</a>), this group will seek to make decisions when there is
-          consensus and with due process. The expectation is that typically, an
-          editor or other participant makes an initial proposal, which is then
-          refined in discussion with members of the group and other reviewers,
-          and consensus emerges with little formal voting being
-          required. However, if a decision is necessary for timely progress, but
-          consensus is not achieved after careful consideration of the range of
-          views presented, the Chairs should put a question out for voting
-          within the group (allowing for remote asynchronous participation --
-          using, for example, email and/or web-based survey techniques) and
-          record a decision, along with any objections. The matter should then
-          be considered resolved unless and until new information becomes
-          available. </p>
-        <p>This charter is written in accordance
-          with <a href="http://www.w3.org/Consortium/Process/policies#Votes">Section
-3.4,
-            Votes</a> of the W3C Process Document and includes no voting
-          procedures beyond what the Process Document requires. </p>
-      </div>
-      <div class="patent">
-        <h2 id="patentpolicy">Patent Policy</h2>
-        <p>This Working Group operates under
-          the <a shape="rect" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">W3C
-            Patent Policy</a> (5 February 2004 Version). To promote the widest
-          adoption of Web standards, W3C seeks to issue Recommendations that can
-          be implemented, according to this policy, on a Royalty-Free basis.</p>
-        <p>For more information about disclosure obligations for this group,
-          please see the <a shape="rect" href="http://www.w3.org/2004/01/pp-impl/">W3C
-            Patent Policy Implementation</a>.</p>
-      </div>
-      <h2 id="about">About this Charter</h2>
-      <p>This charter for the Web Performance Working Group has been created
-        according
-        to <a shape="rect" href="http://www.w3.org/Consortium/Process/groups#GAGeneral">section
-          6.2</a> of
-        the <a shape="rect" href="http://www.w3.org/Consortium/Process">Process
-          Document</a>. In the event of a conflict between
-        this document or the provisions of any charter and the W3C Process,
-        the W3C Process shall take precedence.</p>
-      <h3 id="Changes">Changes</h3>
-      <ul>
-        <li><a href="http://www.w3.org/2013/01/webperf.html">2013 Original
-            charter</a><br>
-        <li><a href="http://www.w3.org/2010/08/webperf.html">2010 Original
-            charter</a><br>
-        </li>
-        <li><a href="http://www.w3.org/2011/04/webperf">2011 charter</a><br>
-        </li>
-      </ul>
-      <hr>
-      <address> Philippe Le Hégaret, @@@
-      </address>
-      <p class="copyright"><a shape="rect" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
-          rel="Copyright">Copyright</a>© 2015 <a href="http://www.w3.org/"><abbr title="World Wide
-    Web Consortium">W3C</abbr></a><sup>&reg;</sup>
-    (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts
-    Institute of
-    Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European
-    Research Consortium for Informatics and
-    Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>).</p>
     </div>
-  </body>
+
+    <div class="dependencies">
+      <h2 id="coordination">Dependencies and Liaisons</h2>
+      <h3>W3C Groups</h3>
+      <dl>
+        <dt>Web Applications Working Group</dt>
+        <dd>
+          This Working Group develops APIs for client-side development and for markup vocabularies for describing and controlling client-side application behavior. In particular, it develops DOM Core. The WebTiming proposal depends on the WebIDL specification.
+        </dd>
+        <dt>Web Applications Security Working Group</dt>
+        <dd>
+          This Working Group develops security and policy mechanisms to improve the security of Web Applications, and enable secure cross-site communication. Performance measures can potentially leak important information related to security and privacy. The work on the Diagnostics API should be coordinated with the <a href='http://www.w3.org/TR/CSP/'>Content Security Policy 1.0</a> specification, which allows user agents to <a href='http://www.w3.org/TR/CSP/#report-uri'>report policy violation</a>.
+        </dd>
+        <dt>HTML Working Group</dt>
+        <dd>This group will maintain and produce incremental revisions to the HTML language. The Web Performance Working Group uses many concepts from the HTML5 specification.
+        </dd>
+        <dt>CSS Working Group</dt>
+        <dd>The group develops and maintains CSS, which is relevant for specifications such page visibility or Timing control for script-based animations.
+        </dd>
+        <dt>Device APIs and Policy Working Group</dt>
+        <dd>This group create client-side APIs that enable the development of Web Applications and Web Widgets that interact with devices services.
+        </dd>
+        <dt>Privacy Interest Group</dt>
+        <dd>
+          This group monitors ongoing privacy issues that affect the Web, investigates potential areas for new privacy work, and provides guidelines and advice for addressing privacy in standards development.
+        </dd>
+        <dt>Protocols and Formats Working Group</dt>
+        <dd>
+          The mission of the PF Working Group is to ensure W3C specifications provide support for accessibility to people with disabilities.
+        </dd>
+      </dl>
+
+      <div>
+        <h3>External Groups</h3>
+        <dl>
+          <dt><a href="http://www.ecma-international.org/memento/TC39.htm" id="tc39">ECMA Technical Committee 39 (TC39)</a></dt>
+          <dd>This is the group responsible for ECMAScript standardization, and related ECMAScript features like E4X. As the Web Performance Working Group will be developing ECMAScript APIs, it should collaborate with TC39.</dd>
+          <dt><a title="IETF Home Page" href="http://www.ietf.org/" id="ietf">Internet Engineering Task Force</a></dt>
+          <dd>The IETF is responsible for defining robust and secure protocols for Internet functionality, in particular HTTP. The Working Group should coordinate protocol-related work (e.g. profiles of hybi or HTTP) with the appropriate IETF WGs.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="participation">
+      <h2 id="participation">Participation</h2>
+      <p>To be successful, the Web Performance Working Group is expected to have 10 or more active participants for its duration. The Chairs and specification Editors are expected to contribute one day per week towards the Working Group. There is no minimum requirement for other Participants. </p>
+
+      <p>The Web Performance Working Group will also allocate the necessary resources for building Test Suites for each specification. </p>
+
+      <p>The group encourages questions and comments on its public mailing lists, as described in <a href="#communication">Communication</a>.</p>
+
+      <p>The group also welcomes non-Members to contribute technical submissions for consideration, with the agreement from each participant to Royalty-Free licensing of those submissions under the W3C Patent Policy.</p>
+    </div>
+
+    <div class="communication">
+      <h2 id="communication">Communication</h2>
+      <p>Most Web Performance Working Group Teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.</p>
+
+      <p>This group primarily conducts its work on <a href='http://www.w3.org/2010/webperf/board/'>github issues</a> and the public mailing list <a href="mailto:public-web-perf@w3.org" id="public-web-perf">public-web-perf@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-web-perf/">archive</a>). The public is invited to contribute to the github repositories and post messages to the list.</p>
+
+      <p>Information about the group (deliverables, participants, teleconferences, etc.) is available from the Web Performance Working Group home page.</p>
+
+      <p>The group will use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.</p>
+
+      <p>Information about the group (for example, details about deliverables, issues, actions, status, participants) will be available from the <a href="http://www.w3.org/2010/webperf/">Web Performance Working Group home page.</a></p>
+    </div>
+
+    <div class="decisions">
+      <h2 id="decisions">Decision Policy</h2>
+      <p>As explained in the W3C Process Document (
+        <a href="http://www.w3.org/Consortium/Process/policies#Consensus">section 3.3</a>), this group will seek to make decisions when there is consensus and with due process. The expectation is that typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required. However, if a decision is necessary for timely progress, but consensus is not achieved after careful consideration of the range of views presented, the Chairs should put a question out for voting within the group (allowing for remote asynchronous participation -- using, for example, email and/or web-based survey techniques) and record a decision, along with any objections. The matter should then be considered resolved unless and until new information becomes available.
+      </p>
+
+      <p>This charter is written in accordance with <a href="http://www.w3.org/Consortium/Process/policies#Votes">Section 3.4, Votes</a> of the W3C Process Document and includes no voting procedures beyond what the Process Document requires. </p>
+    </div>
+
+    <div class="patent">
+      <h2 id="patentpolicy">Patent Policy</h2>
+      <p>This Working Group operates under the <a shape="rect" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">W3C Patent Policy</a> (5 February 2004 Version). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.</p>
+      <p>For more information about disclosure obligations for this group, please see the <a shape="rect" href="http://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.</p>
+    </div>
+
+    <h2 id="about">About this Charter</h2>
+    <p>This charter for the Web Performance Working Group has been created according to <a shape="rect" href="http://www.w3.org/Consortium/Process/groups#GAGeneral">section 6.2</a> of the <a shape="rect" href="http://www.w3.org/Consortium/Process">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.</p>
+
+    <h3 id="Changes">Changes</h3>
+    <ul>
+      <li><a href="http://www.w3.org/2013/01/webperf.html">2013 Original charter</a></li>
+      <li><a href="http://www.w3.org/2010/08/webperf.html">2010 Original charter</a></li>
+      <li><a href="http://www.w3.org/2011/04/webperf">2011 charter</a></li>
+    </ul>
+    <hr>
+    <address> Philippe Le Hégaret, @@@</address>
+    <p class="copyright">
+      <a shape="rect" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright" rel="Copyright">Copyright</a>© 2015
+      <a href="http://www.w3.org/">
+        <abbr title="World Wide
+    Web Consortium">W3C</abbr>
+      </a><sup>&reg;</sup> (
+      <a href="http://www.csail.mit.edu/">
+        <abbr title="Massachusetts Institute of Technology">MIT</abbr>
+      </a>,
+      <a href="http://www.ercim.eu/">
+        <abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr>
+      </a>, <a href="http://www.keio.ac.jp/">Keio</a>,
+      <a href="http://ev.buaa.edu.cn/">Beihang</a>).</p>
+  </div>
+</body>
+
 </html>
