@@ -91,7 +91,7 @@
               End date
             </th>
             <td>
-              31 May 2018
+              30 June 2020
             </td>
           </tr>
 
@@ -138,7 +138,7 @@
         <h2>Scope</h2>
         <p>Web developers are building sophisticated applications where application performance is a critical feature. Web developers need the ability to observe the performance characteristics of their applications, and they want the ability to write more efficient applications, using well-defined interoperable methods.</p>
 
-      <p>The Web Performance Working Group's deliverables include user agent features and APIs to observe and improve aspects of application performance. These deliverables will apply to desktop and mobile browsers and other non-browser environments where appropriate, and will be consistent with Web technologies designed in other working groups including HTML, CSS, WebApps, DAP and SVG.</p>
+        <p>The Web Performance Working Group's deliverables include user agent features and APIs to observe and improve aspects of application performance, such as measuring network and rendering performance, responsiveness and interactivity, memory and CPU use, application failures, and similar APIs and infrastructure to enable measurement and delivery of better user experience. These deliverables will apply to desktop and mobile browsers and other non-browser environments where appropriate, and will be consistent with Web technologies designed in other working groups including HTML, CSS, WebApps, DAP and SVG.</p>
 
       <p>
         In addition to developing Recommendation Track documents, the Web Performance Working Group may provide review of specifications from other Working Groups.
@@ -148,10 +148,7 @@
             <p>The following features are out of scope, and will not be addressed by this working group.</p>
 
             <ul class="out-of-scope">
-            <li>methods to profile and instrument server side code;
-        </li>
-        <li>performance data analysis techniques or algorithms.
-        </li>
+              <li>performance data analysis techniques or algorithms.</li>
             </ul>
         </div>
 
@@ -159,6 +156,7 @@
           <h3>Success Criteria</h3>
           <p>In order to advance to  <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have at least two independent implementations of each of feature defined in the specification.</p>
           <p>Each specification should contain a section detailing any <a href='https://www.w3.org/TR/security-privacy-questionnaire/'>known security</a> or <a href="http://gregnorc.github.io/ping-privacy-questions/">privacy</a> implications for implementers, Web authors, and end users.</p>
+          <p>Normative specification changes are generally expected to have a corresponding set of tests, either in the form of new tests or modifications to existing tests, or must include the rationale for why test updates are not required for the proposed update.</p>
         </div>
       </section>
 
@@ -169,7 +167,7 @@
           Deliverables
         </h2>
 
-        <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/wiki/Web_Performance/Publications">group publication status page</a>.</p>
+        <p>More detailed milestones and updated publication schedules are available on the <a href="https://bit.ly/webperfwg-specs">group publication status page</a>.</p>
 
         <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Next Recommendation expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
@@ -185,14 +183,16 @@
             <dd>
               <p>This document defines an API that provides the current time in sub-millisecond resolution such that it is not subject to system clock skew or adjustments. </p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2017</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Candidate Recommendation</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
             </dd>
 
             <dt id="performance-timeline" class="spec"><a href="https://w3c.github.io/performance-timeline/">Performance Timeline</a></dt>
             <dd>
               <p>This specification defines a unified interface to store and retrieve performance metric data.</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2017</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Candidate Recommendation</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
             </dd>
 
             <dt id="resource-timing" class="spec"><a href="https://w3c.github.io/resource-timing/">Resource Timing</a></dt>
@@ -204,66 +204,76 @@
             <li>a resource may be one of the following elements: iframe, img, script, object, embed and link.</li>
           </ul>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2016</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
             </dd>
 
             <dt id="navigation-timing" class="spec"><a href="https://w3c.github.io/navigation-timing/">Navigation Timing</a></dt>
             <dd>
               <p>An interoperable means for site developers to collect real-world performance information from the user agent while loading the root document of a webpage. The user agent captures the end to end latency associated with loading a webpage from a web server. This includes the time associated with fetching the document from the network to the time associated to load the document within the user agent.</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2016</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
+
+              <p>Note: after Level 2 of Navigation Timing is ratified, future development of new Navigation Timing features will be done within Resource Timing; Navigation Timing will be merged with Resource Timing.</p>
             </dd>
 
             <dt id="user-timing" class="spec"><a href="https://w3c.github.io/user-timing/">User Timing</a></dt>
             <dd>
               <p>An interoperable means for site developers to capture timing information with a developer supplied name. The user agent captures the time stamp at the point and time specified in the code executing in the user agent.</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2016</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Candidate Recommendation</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
             </dd>
 
             <dt id="page-visibility" class="spec"><a href="https://w3c.github.io/page-visibility/">Page Visibility</a></dt>
             <dd>
               <p>An interoperable means for site developers to programmatically determine the current visibility of a document and be notified of visibility changes.</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2016</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Proposed Recommendation</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
             </dd>
 
             <dt id="beacon" class="spec"><a href="https://w3c.github.io/beacon/">Beacon</a></dt>
             <dd>
               <p>An interoperable API for site developers to asynchronously transfer data from the user agent to a web server, with a guarantee from the user agent that the data will be eventually sent.</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2016</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Candidate Recommendation</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
             </dd>
 
             <dt id="ric" class="spec"><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></dt>
             <dd>
               <p>An API that web page authors can use to cooperatively schedule background tasks such that they do not introduce delays to other high priority tasks that share the same event loop, such as input processing, animations and frame compositing.</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2017</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Proposed Recommendation</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2018</p>
             </dd>
 
             <dt id="resource_hints" class="spec"><a href="https://w3c.github.io/resource-hints/">Resource Hints</a></dt>
             <dd>
               <p>This specification defines the dns-prefetch, preconnect, prefetch, and prerender relationships of the HTML Link Element (<link>).</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2017</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2019</p>
             </dd>
 
             <dt id="preload" class="spec"><a href="https://w3c.github.io/preload/">Preload</a></dt>
             <dd>
               <p>This specification defines the link relation type <code>preload</code>, a declarative fetch primitive that initiates an early fetch and separates fetching from resource execution.</p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b> Q3 2017</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Candidate Recommendation</a></p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
             </dd>
 
-            <!-- Incubated in: https://github.com/WICG/longtask -->
-            <dt id="longtask" class="spec"><a href="https://w3c.github.io/longtask/">Long Task</a></dt>
+            <!-- Incubated in: https://github.com/WICG/longtasks -->
+            <dt id="longtasks" class="spec"><a href="https://w3c.github.io/longtasks/">Long Task</a></dt>
             <dd>
               <p>This specification defines an API that web page authors can use to detect presence of "long tasks" that monopolize the UI thread for extended periods of time and block other critical tasks from being executed - e.g. reacting to user input.</p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b>Q3 2017</p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2019</p>
             </dd>
 
             <!-- Incubated in: https://github.com/WICG/paint-timing -->
@@ -273,28 +283,7 @@
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b>Q3 2017</p>
-            </dd>
-
-            <!-- Incubated in: https://github.com/w3c/charter-webperf/issues/30 -->
-            <dt id="element-timing" class="spec"><a href="https://w3c.github.io/element-timing/">Element Timing</a></dt>
-            <dd>
-              <p>This specification defines an API that web page authors can use to capture the set of key moments for an element on the page - e.g. added to DOM and painted.</p>
-
-              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
-
-              <p class="milestone"><b>Next Recommendation expected completion:</b>Q3 2017</p>
-            </dd>
-
-            <!-- Incubated in: https://github.com/WICG/memory-pressure -->
-            <dt id="memory-pressure" class="spec"><a href="https://w3c.github.io/memory-pressure/">Memory Pressure</a></dt>
-            <dd>
-              <p>This specification defines an API that exposes memory pressure events received by the system to web applications, to enable web applications to be memory conscious — e.g. free up cache and other temporary objects.
-              </p>
-
-              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
-
-              <p class="milestone"><b>Next Recommendation expected completion:</b>Q3 2017</p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2019</p>
             </dd>
 
             <!-- Incubated in: https://github.com/WICG/server-timing -->
@@ -305,7 +294,40 @@
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
 
-              <p class="milestone"><b>Next Recommendation expected completion:</b>Q3 2017</p>
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q2 2019</p>
+            </dd>
+
+            <!-- Incubated in: https://github.com/WICG/device-memory -->
+            <dt id="device-memory" class="spec"><a href="https://w3c.github.io/device-memory/">Device Memory</a></dt>
+            <dd>
+              <p>This specification defines a JavaScript API and HTTP Client Hint header to surface device capability for memory — i.e. device RAM, in order to enable web apps to customize content depending on device memory constraints.
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
+
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2019</p>
+            </dd>
+
+            <!-- Incubated in: https://github.com/WICG/reporting -->
+            <dt id="reporting" class="spec"><a href="https://w3c.github.io/reporting/">Reporting</a></dt>
+            <dd>
+              <p>This specification defines a generic reporting framework which allows web developers to associate a set of named reporting endpoints with an origin. Various platform features (like Content Security Policy, Network Error Reporting, and others) will use these endpoints to deliver feature-specific reports in a consistent manner.
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
+
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2019</p>
+            </dd>
+
+            <!-- Incubated in: https://github.com/WICG/network-error-logging -->
+            <dt id="nel" class="spec"><a href="https://w3c.github.io/network-error-logging">Network Error Logging</a></dt>
+            <dd>
+              <p>This specification defines a mechanism that enables developers to declare a network error reporting policy for a web application. A user agent can use this policy to report encountered network errors that prevented it from successfully fetching requested resource
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/">Working Draft</a></p>
+
+              <p class="milestone"><b>Next Recommendation expected completion:</b> Q4 2019</p>
             </dd>
 
 <!--
@@ -369,7 +391,7 @@
 
         <dt><a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></dt>
         <dd>
-          This group provides a lightweight venue for proposing, incubating and discussing new web platform features. Several proposals related to Web Performance were moved there: <a href="https://w3c.github.io/frame-timing/">Frame Timing</a>, <a href="https://w3c.github.io/server-timing/">Server Timing</a>, <a href="https://w3c.github.io/reporting/">Reporting</a>, and <a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a>.
+          This group provides a lightweight venue for proposing, incubating and discussing new web platform features. The Web Performance Working group will incubate and review new proposals that are within scope of our charter within the WICG. Once such WICG-incubated proposal is implemented and available in at least one major browser, and has support from one more, it may be adopted by the Web Performance Working group.
         </dd>
           </dl>
           <h3 id="external-coordination">External Organizations</h3>
@@ -379,7 +401,9 @@
           <dt><a title="IETF Home Page" href="http://www.ietf.org/" id="ietf">Internet Engineering Task Force</a></dt>
           <dd>The IETF is responsible for defining robust and secure protocols for Internet functionality, in particular HTTP. The Working Group should coordinate protocol-related work (e.g. profiles of hybi or HTTP) with the appropriate IETF WGs.</dd>
           </dl>
-
+          <dt><a title="WHATWG" href="https://whatwg.org/" id="whatwg">Web Hypertext Application Technology Working Group (WHATWG)</a></dt>
+          <dd>The Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in evolving the web through standards and tests.</dd>
+          </dl>
         </div>
       </section>
 
@@ -416,7 +440,7 @@
           Most Web Performance Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work in its <a href="https://www.w3.org/wiki/Web_Performance/Publications">public repositories</a>. There is also a public mailing list <a id="public-name" href="mailto:public-web-perf@w3.org">public-web-perf@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-web-perf/">archive</a>).  The public is invited to contribute to the github repositories and post messages to the list. Regular activity summaries around the github repositories will be provided.
+          This group primarily conducts its technical work in its <a href="https://github.com/orgs/w3c/teams/web-performance/repositories">public repositories</a>. There is also a public mailing list <a id="public-name" href="mailto:public-web-perf@w3.org">public-web-perf@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-web-perf/">archive</a>).  The public is invited to contribute to the github repositories and post messages to the list. Regular activity summaries around the github repositories will be provided.
         </p>
       </section>
 
@@ -551,7 +575,7 @@
               </tr>
               <tr>
                 <th>
-                  <a href="">Proposed</a>
+                  <a href="https://www.w3.org/2016/07/webperf">Rechartered</a>
                 </th>
                 <td>
                   2016-06-01
@@ -561,6 +585,20 @@
                 </td>
                 <td>
                   <p>Removed CPU and Memory monitoring. Moved to WICG: Frame Timing, Server Timing, NEL, Reporting. Moved to Software and Document license.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="">Proposed</a>
+                </th>
+                <td>
+                  2018-06-30
+                </td>
+                <td>
+                  2020-06-30
+                </td>
+                <td>
+                  <p>Removed Memory Pressure. Added: Reporting, NEL, Device Memory.</p>
                 </td>
               </tr>
             </tbody>
